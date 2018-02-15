@@ -46,8 +46,8 @@ public class Name implements Comparable<Name>{
     /**
      * Compares 2 names based on Comparable
      */
-    public int compareTo(Name nameOther) {
-        return this.fullName.compareTo(nameOther.toString());
+    public int compareTo(Name name) {
+        return this.fullName.compareTo(name.toString());
     }
 
     @Override
