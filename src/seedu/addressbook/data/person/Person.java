@@ -34,11 +34,9 @@ public class Person implements ReadOnlyPerson, Comparable<Person> {
         this(source.getName(), source.getPhone(), source.getEmail(), source.getAddress(), source.getTags());
     }
 
-    /**
-     * Compares Name of 2 Person based on Comparable
-     */
+    @Override
     public int compareTo(Person person) {
-        return this.name.compareTo(person.getName());
+        return this.getName().compareTo(person.getName());
     }
 
     @Override
